@@ -10,13 +10,13 @@ export default function CreateStore() {
   const persistConfig = {
     key: "root",
     storage: AsyncStorage,
-    whitelist: []
+    whitelist: ['auth']
   };
 
   const persistedReducer = persistReducer(persistConfig, reducers);
   const sagaMiddleware = createSagaMiddleWare();
-  let store = createStore(persistedReducer, applyMiddleware(sagaMiddleware));
-  let persistor = persistStore(store);
+  const store = createStore(persistedReducer, {}, applyMiddleware(sagaMiddleware));
+  const persistor = persistStore(store);
   sagaMiddleware.run(sagas);
   return { store, persistor };
 };
