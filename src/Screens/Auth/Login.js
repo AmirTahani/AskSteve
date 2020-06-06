@@ -1,10 +1,35 @@
-import React from 'react';
-import { View, Text } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet } from 'react-native';
+import { Input, Button, Wrapper } from '../../Components/kit';
 
-export default function Login() {
+export default function Login({ navigation }) {
+  const [username, setUsername] = useState('AmirTahani');
+
+  const handleSubmit = () => {
+    navigation.navigate('Password', {
+      username
+    });
+  };
   return (
-    <View>
-      <Text>Login Screen</Text>
-    </View>
+    <Wrapper style={styles.wrapper}>
+      <Input
+        placeholder="Username"
+        value={username}
+        onChangeText={setUsername}
+      />
+      <Button
+        disabled={!username}
+        onPress={handleSubmit}
+      >
+        Submit
+      </Button>
+    </Wrapper>
   );
 }
+
+const styles = StyleSheet.create({
+  wrapper: {
+    flexDirection: 'column',
+    justifyContent: 'center'
+  }
+});
