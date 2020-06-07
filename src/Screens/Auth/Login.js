@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import { Input, Button, Wrapper } from '../../Components/kit';
 
 export default function Login({ navigation }) {
-  const [username, setUsername] = useState('AmirTahani');
+  const [username, setUsername] = useState('');
 
   const handleSubmit = () => {
     navigation.navigate('Password', {

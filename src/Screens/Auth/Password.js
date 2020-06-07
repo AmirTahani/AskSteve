@@ -5,7 +5,7 @@ import { login } from '../../redux/Modules/auth';
 import { Button, Input, Wrapper } from '../../Components/kit';
 
 function Password({ navigation, route, login, auth }) {
-  const [password, setPassword] = useState('amir_15_15');
+  const [password, setPassword] = useState('');
   const handleSubmit = () => {
     login({ username: route.params.username, password });
   };
