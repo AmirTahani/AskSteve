@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, FlatList, Keyboard } from 'react-native';
 import { connect } from 'react-redux';
 import { searchRepo } from '../../redux/Modules/search';
@@ -6,7 +6,11 @@ import { Input, Button, Wrapper, EmptyList, Loading } from '../../Components/kit
 import Repo from "./Repo";
 
 function Home({ search, searchRepo, navigation }) {
-  const [repo, setRepo] = useState('');
+  const [repo, setRepo] = useState('react-native');
+
+  useEffect(() => {
+    searchRepo({ q: repo });
+  }, []);
 
   const handleSearch = () => {
     Keyboard.dismiss();
