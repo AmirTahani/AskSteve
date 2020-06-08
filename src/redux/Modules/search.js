@@ -1,6 +1,7 @@
 import { stringifyQuery } from "../../utils/query";
 import { put } from 'redux-saga/effects';
 import { LOGOUT } from './logout';
+import Toast from "react-native-simple-toast";
 
 export const SEARCH_REPO = 'AskSteve/search/SEARCH_REPO';
 export const SEARCH_REPO_SUCCESS = 'AskSteve/search/SEARCH_REPO_SUCCESS';
@@ -72,5 +73,6 @@ export function* watchSearchRepo(fetch, { query }) {
     yield put(searchRepoSuccess(result.items));
   } catch (e) {
     yield put(searchRepoFailure(e));
+    Toast.showWithGravity(e.message, Toast.LONG, Toast.TOP);
   }
 }

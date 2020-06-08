@@ -1,4 +1,5 @@
 import { encode as btoa } from 'base-64';
+import Toast from 'react-native-simple-toast';
 import { put } from 'redux-saga/effects';
 import { LOGOUT } from './logout';
 
@@ -32,8 +33,8 @@ export default function reducer(state = initialState, action = {}) {
     case LOGIN_FAILURE:
       return {
         ...state,
-        loading: true,
-        loaded: false,
+        loading: false,
+        loaded: true,
         error: action.error
       };
     case LOGOUT:
@@ -74,6 +75,7 @@ export function* watchLogin(fetch, { credentials }) {
     yield put(loginSuccess(result));
   } catch (e) {
     yield put(loginFailure(e));
+    Toast.showWithGravity(e.message, Toast.LONG, Toast.TOP);
     console.log(e, 'this is errors');
   }
 }

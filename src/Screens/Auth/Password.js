@@ -9,6 +9,7 @@ function Password({ navigation, route, login, auth }) {
   const handleSubmit = () => {
     login({ username: route.params.username, password });
   };
+  console.log(auth, 'this is auth');
 
   return (
     <Wrapper style={styles.wrapper}>

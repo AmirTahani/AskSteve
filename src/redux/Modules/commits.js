@@ -1,5 +1,6 @@
 import { put } from 'redux-saga/effects';
 import { LOGOUT } from './logout';
+import Toast from "react-native-simple-toast";
 
 export const LOAD_COMMITS = 'AskSteve/commits/LOAD_COMMITS';
 export const LOAD_COMMITS_SUCCESS = 'AskSteve/commits/LOAD_COMMITS_SUCCESS';
@@ -72,5 +73,7 @@ export function* watchLoadCommits(fetch, { repo, owner, page }) {
     yield put(loadCommitsSuccess(result));
   } catch (e) {
     yield put(loadCommitsFailure(e));
+    Toast.showWithGravity(e.message, Toast.LONG, Toast.TOP);
+
   }
 }
