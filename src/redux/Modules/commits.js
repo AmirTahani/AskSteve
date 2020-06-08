@@ -19,7 +19,9 @@ export default function reducer(state = initialState, action = {}) {
     case LOAD_COMMITS:
       return {
         ...state,
-        loading: true
+        loading: true,
+        loaded: action.page !== 1,
+        data: action.page === 1 ? [] : state.data
       };
     case LOAD_COMMITS_SUCCESS:
       return {
