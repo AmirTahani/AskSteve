@@ -1,3 +1,4 @@
 # Demo
 
-![android-gif-test](./Android.gif | =250x250)
+<img src="./Android.gif" width="200" height="200"> 
+
