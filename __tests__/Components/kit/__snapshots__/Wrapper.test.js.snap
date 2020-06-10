@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Wrapper/> should render a Wrapper with custom styles 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "backgroundColor": "#f1f1f1",
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 12,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`<Wrapper/> should render a Wrapper with given styles 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#f7f7f7",
+      },
+      Object {
+        "backgroundColor": "#f1f1f1",
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 12,
+      }
+    }
+  />
+</View>
+`;

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card/> should Render a Card with children and different styles 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#f7f7f7",
+      },
+      Object {
+        "backgroundColor": "#fff",
+        "borderRadius": 8,
+        "elevation": 3,
+        "marginVertical": 6,
+        "padding": 12,
+      },
+    ]
+  }
+>
+  <Text>
+    Children Test
+  </Text>
+</View>
+`;
+
+exports[`<Card/> should render a Card with children 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "backgroundColor": "#fff",
+        "borderRadius": 8,
+        "elevation": 3,
+        "marginVertical": 6,
+        "padding": 12,
+      },
+    ]
+  }
+>
+  <Text>
+    Children Test
+  </Text>
+</View>
+`;

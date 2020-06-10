@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Loading/> should render a Indicator with default props 1`] = `
+<ActivityIndicator
+  animating={true}
+  color="#6498e6"
+  hidesWhenStopped={true}
+  size={22}
+  style={
+    Object {
+      "marginVertical": 20,
+    }
+  }
+/>
+`;
+
+exports[`<Loading/> should render a Indicator with different size and color 1`] = `
+<ActivityIndicator
+  animating={true}
+  color="#000"
+  hidesWhenStopped={true}
+  size={40}
+  style={
+    Object {
+      "marginVertical": 20,
+    }
+  }
+/>
+`;

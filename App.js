@@ -8,8 +8,7 @@ import Routes from './src/navigation/routes';
 
 const { store, persistor } = createStore();
 
-export default function App(props) {
-  console.log(props);
+export default function App() {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor} loading={null}>

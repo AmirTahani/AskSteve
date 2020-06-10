@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EmptyList/> should render with default props 1`] = `
+<Text
+  style={
+    Object {
+      "alignSelf": "center",
+      "fontSize": 16,
+      "marginVertical": 20,
+    }
+  }
+>
+  Nothing to Show
+</Text>
+`;
+
+exports[`<EmptyList/> should render with given prop 1`] = `
+<Text
+  style={
+    Object {
+      "alignSelf": "center",
+      "fontSize": 16,
+      "marginVertical": 20,
+    }
+  }
+>
+  Test
+</Text>
+`;

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar/> renders Avatar with a default image 1`] = `
+<Image
+  height={50}
+  source={
+    Object {
+      "testUri": "../../../src/assets/images/avatar.jpeg",
+    }
+  }
+  style={
+    Object {
+      "borderRadius": 50,
+      "paddingLeft": 10,
+    }
+  }
+  width={50}
+/>
+`;
+
+exports[`<Avatar/> renders Avatar with a valid source 1`] = `
+<Image
+  height={50}
+  source={
+    Object {
+      "uri": "https://example.com/",
+    }
+  }
+  style={
+    Object {
+      "borderRadius": 50,
+      "paddingLeft": 10,
+    }
+  }
+  width={50}
+/>
+`;

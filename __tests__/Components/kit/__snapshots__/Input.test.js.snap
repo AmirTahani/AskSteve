@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input/> should render a TextInput with custom styles 1`] = `
+<TextInput
+  allowFontScaling={true}
+  rejectResponderTermination={true}
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "borderColor": "#888888",
+      "borderRadius": 8,
+      "borderWidth": 1,
+      "paddingHorizontal": 4,
+      "paddingVertical": 12,
+    }
+  }
+  underlineColorAndroid="transparent"
+/>
+`;
