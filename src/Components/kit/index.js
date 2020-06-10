@@ -5,9 +5,11 @@ import Card from './Card';
 import Logout from './Logout';
 import EmptyList from './EmptyList';
 import Loading from './Loading';
+import Avatar from './Avatar';
 
 export {
   Input,
+  Avatar,
   EmptyList,
   Loading,
   Logout,
