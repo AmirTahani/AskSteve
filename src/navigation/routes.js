@@ -1,6 +1,5 @@
 import * as React from "react";
 import { connect } from 'react-redux';
-import { TouchableOpacity, Text } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Login from "../Screens/Auth/Login";
@@ -8,7 +7,7 @@ import Password from "../Screens/Auth/Password";
 import Home from "../Screens/Home/Home";
 import Commits from "../Screens/Commits/Commits";
 import { logout } from '../redux/Modules/logout';
-import {Logout} from '../Components/kit';
+import { Logout } from '../Components/kit';
 
 
 const Stack = createStackNavigator();
