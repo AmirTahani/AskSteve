@@ -76,6 +76,5 @@ export function* watchLogin(fetch, { credentials }) {
   } catch (e) {
     yield put(loginFailure(e));
     Toast.showWithGravity(e.message, Toast.LONG, Toast.TOP);
-    console.log(e, 'this is errors');
   }
 }
