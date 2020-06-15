@@ -1,7 +1,6 @@
-import { baseUrl } from './src/config';
+import { baseUrl } from '../config';
 
 export default async function (url, options) {
-  console.log('oumaad to fetch asliiiiii');
   const response = await fetch(`${baseUrl}${url}`, {
     ...options
   });
